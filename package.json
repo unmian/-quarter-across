@@ -1,0 +1,52 @@
+{
+  "name": "@quarter/across",
+  "version": "0.0.1",
+  "author": {
+    "name": "Quarter",
+    "email": "master@shiruihua.cn"
+  },
+  "description": "Tools for data transfer",
+  "keywords": [
+    "vue2",
+    "tool"
+  ],
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unmian/-quarter-across"
+  },
+  "files": [
+    "lib",
+    "types"
+  ],
+  "main": "lib/index.umd.js",
+  "module": "lib/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.umd.js"
+    }
+  },
+  "typings": "types/index.d.ts",
+  "homepage": "https://github.com/unmian/-quarter-across",
+  "bugs": "https://github.com/unmian/-quarter-across/issues",
+  "scripts": {
+    "dev": "vite --config ./build/base.config.ts",
+    "test": "vue-tsc --noEmit",
+    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
+    "preview": "vite preview",
+    "publish:private": "npm publish --registry https://npm.lescity.com.cn/",
+    "unpublish:private": "npm unpublish --force --registry https://npm.lescity.com.cn/"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vite-plugin-dts": "^1.0.5",
+    "vue-tsc": "^0.33.7"
+  },
+  "dependencies": {
+    "vue": "2.6.14",
+    "vue-class-component": "^7.2.6"
+  }
+}
