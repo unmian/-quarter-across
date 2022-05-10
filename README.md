@@ -172,3 +172,13 @@ export default class Demo extends Vue {
   }
 }
 ```
+
+## Licenses
+
+GPL-3.0 License © 2022-PRESENT [Quarter](https://github.com/unmian)
+
+## Releases
+
+### Version 0.0.1 - 2022/03/09
+
+- **feat:** 完成第一个可用版本

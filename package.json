@@ -7,8 +7,8 @@
   },
   "description": "Tools for data transfer",
   "keywords": [
-    "vue2",
-    "tool"
+    "transfer",
+    "cross-page"
   ],
   "license": "GPL-3.0",
   "repository": {
